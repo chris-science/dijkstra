@@ -128,7 +128,7 @@ public class Main extends Object
 	/* utility function to reconstruct the path from a target node back to the start */
 	ArrayList<Node> find_parent_node(ArrayList<Node> existing_path, int current_node_id)
 	{
-		// retrieve parent node object from visited_nodes arraylist via its self_id
+		// retrieve current node object from visited_nodes arraylist via its self_id
 		Node current_node = this.find_node_in_arraylist(this.visited_nodes, current_node_id) ;
 		
 		// if current node is the start node, just add its object to the existing_path
